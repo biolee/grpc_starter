@@ -1,0 +1,21 @@
+// path1/path2/demo.proto
+syntax = "proto3";
+
+import "path3/path4/demo.proto";
+import "path1/path2/lib.proto";
+
+package path1.path2;
+option go_package = "github.com/biolee/grpc_starter/path1/path2;path2";
+option java_package = "com.github.biolee.path1.path2";
+
+message DemoReq {
+    path3.path4.MessageOne message_one = 1;
+}
+
+message DemoResp {
+    MessageTwo message_one = 1;
+}
+
+service DemoService {
+    rpc Demo (DemoReq) returns (DemoResp);
+}

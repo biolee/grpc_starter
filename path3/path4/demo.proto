@@ -1,0 +1,10 @@
+// path3/path4/demo.proto
+syntax = "proto3";
+
+package path3.path4;
+option go_package = "github.com/biolee/grpc_starter/path3/path4;path4";
+option java_package = "com.github.biolee.path3.path4";
+
+message MessageOne {
+    string name = 1;
+}

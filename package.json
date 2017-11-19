@@ -1,0 +1,23 @@
+{
+  "name": "grpc_starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biolee/grpc_starter.git"
+  },
+  "author": "liyanan <liyananfamily@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biolee/grpc_starter/issues"
+  },
+  "homepage": "https://github.com/biolee/grpc_starter#readme",
+  "dependencies": {
+    "google-protobuf": "^3.5.0",
+    "ts-protoc-gen": "^0.4.0"
+  }
+}
