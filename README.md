@@ -51,9 +51,19 @@ option java_package = "com.github.biolee.path3.path4";
 
 // Python,Javascript
 // 生成的Python import 根据proto的import语句生成
-import "path1/path2/lib.proto";
-
 ```
+```python
+
+// import "path1/path2/lib.proto";-> Python
+from path1.path2 import lib_pb2 as path1_dot_path2_dot_lib__pb2
+```
+
+```typescript
+// import "path1/path2/lib.proto";-> Javascript
+var path1_path2_lib_pb = require('../../path1/path2/lib_pb.js');
+import * as path1_path2_lib_pb from "../../path1/path2/lib_pb";
+```
+
 ## compile
 
 ```bash
